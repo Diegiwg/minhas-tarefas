@@ -23,3 +23,19 @@ Para o ORM, foi escolhido o PonyORM, por ser um ORM leve, porém completo.
 Para definir as configurações, foi escolhido user Variáveis de Ambiente.
 
 O projeto, por padrão, utiliza uma instancia de SQLite, mas o configurador (config.py) foi escrito para dar suporte a todos [os providers](https://docs.ponyorm.org/firststeps.html#database-binding), que o PonyORM fornece.
+
+### Modelo de Dados
+
+Os modelos são:
+
+- User
+  - full_name: str
+  - email: str
+  - hashed_password: str
+  - tasks: list[Task]
+
+- Task
+  - title: str
+  - description: str
+  - done: bool
+  - user: User
