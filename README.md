@@ -12,6 +12,14 @@ Para facilitar a execução do projeto, foi construído um Colab, que automatiza
 
 ## Informações Técnicas
 
+### Autenticação
+
+O sistema usa JWT para controlar o acesso as contas e informações das mesmas. Todo o processo de autenticação foi construído baseando-se em diversos artigos técnicos, encontrados na seguinte lista:
+
+- <https://fastapi.tiangolo.com/tutorial/security/oauth2-jwt/>
+- <https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/>
+- <https://testdriven.io/blog/fastapi-jwt-auth/>
+
 ### Banco de Dados e ORM
 
 Para o Banco de Dados, foi escolhido o SQLite, por ser um banco de dados mais simples. O que vai funcionar muito bem para o sistema.
