@@ -1,7 +1,5 @@
-from passlib.context import CryptContext
+from ..state.state import pwd_context
 
 
-def verify_password(
-    pwd_context: CryptContext, plain_password: str, hashed_password: str
-) -> bool:
-    return pwd_context.verify(plain_password, hashed_password)
+def verify_password(plain_password: str, hashed_password: str) -> bool:
+    return pwd_context.verify(plain_password, hash=hashed_password)
