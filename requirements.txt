@@ -1,4 +1,4 @@
-fastapi==0.95.1
+fastapi==0.95.2
 python-dotenv==1.0.0
 pony==0.7.16
 python-jose[cryptography]==3.3.0
